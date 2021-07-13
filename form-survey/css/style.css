@@ -1,0 +1,12 @@
+label, p{
+    margin: 10px 0 10px 0;
+    display: block;
+    font-weight: bold;
+}
+[type='radio'] ,[type='checkbox']{
+    margin-right: 10px;
+} 
+
+.radio, .check{
+    font-weight: normal !important;
+}
