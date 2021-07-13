@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Formulario de encuesta</h1>
+          <p id="description" class="description text-center">
+            En esta encuesta será para diligenciar tus datos personales
+          </p>
+        </header>
+
+        <main> 
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Ingresa tu nombre"
+                    required
+                    />
+                </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Ingresa tu Email"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number"
+                >Age<span class="clue">(optional)</span></label
+                >
+                <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <p>Escoge tu rol actual</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="trabajo medio tiempo">Trabajo medio tiempo</option>
+                <option value="autodidacta">Autodidacta</option>
+                <option value="prefiero no decir">Prefiero no decir</option>
+                <option value="otros">Otros</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <p>Ha sido dificil desarrollar los proyectos?</p>
+                <label>
+                <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                />Si, necesito ayuda.</label
+                >
+                <label>
+                <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                />Si, pero los pude hacer</label
+                >
+        
+                <label
+                ><input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                />No, han sido normales</label
+                >
+            </div>
+        
+            <div class="form-group">
+                <p>
+                Que te gustaria hacer cuando termines en Academia Geek
+                <span class="clue">Marca las que creas necesarias</span>
+                </p>
+        
+                <label
+                ><input
+                    name="prefer"
+                    value="Profundizar-frontend"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Profundizar frontend</label
+                >
+                <label>
+                <input
+                    name="prefer"
+                    value="backend"
+                    type="checkbox"
+                    class="input-checkbox"
+                />comenzar-con-backend</label
+                >
+                <label
+                ><input
+                    name="prefer"
+                    value="ciencia-de-datos"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Comenzar con ciencia de datos</label
+                >
+                <label
+                ><input
+                    name="prefer"
+                    value="machine-learning"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Comenzar con machine learning</label
+                >
+                <label
+                ><input
+                    name="prefer"
+                    value="emprender"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Emprender</label
+                >
+                <label
+                ><input
+                    name="prefer"
+                    value="trabajo"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Buscar trabajo</label
+                >
+                <label
+                ><input
+                    name="prefer"
+                    value="ingles"
+                    type="checkbox"
+                    class="input-checkbox"
+                />Aprender ingles</label
+                >
+            </div>
+        
+            <div class="form-group">
+                <p>Sugerencias</p>
+                <textarea
+                id="sugerencias"
+                class="input-textarea"
+                name="sugerencias"
+                placeholder="Ingresa tu sugerencias aquí..."
+                ></textarea>
+            </div>
+        
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                Submit
+                </button>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <p></p>
+        </footer>
+      </div>
+</body>
+</html>
