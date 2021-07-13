@@ -10,3 +10,15 @@ label, p{
 .radio, .check{
     font-weight: normal !important;
 }
+
+.button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1200px) {
+    .button{
+        justify-content: flex-end;
+    }
+}
